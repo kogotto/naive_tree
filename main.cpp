@@ -1,3 +1,12 @@
+/**
+  * Didenko Yakov
+  * APO-11
+  *
+  * module 3
+  * task #2_4
+  *
+  */
+
 #include <iostream>
 #include <queue>
 
@@ -148,12 +157,6 @@ int main()
         naiveTree.insert(key);
     }
 
-    naiveTree.inOrderTraverse(printNode);
-    cout << endl;
-    naiveTree.preOrderTraverse(printNode);
-    cout << endl;
-    naiveTree.postOrderTraverse(printNode);
-    cout << endl;
     naiveTree.levelOrderTraverse(printNode);
     return 0;
 }
