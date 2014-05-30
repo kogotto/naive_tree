@@ -14,7 +14,7 @@ using namespace std;
 
 
 typedef int key_t;
-typedef struct{} data_t;
+typedef struct {} data_t;
 
 
 class TNaivBinaryTree {
@@ -51,7 +51,7 @@ public:
     void levelOrderTraverse(const action_t & action) {
         queue<node_t *> traverseQueue;
         traverseQueue.push(root);
-        while(!traverseQueue.empty()) {
+        while (!traverseQueue.empty()) {
             node_t * current = traverseQueue.front();
             traverseQueue.pop();
             if (current == 0) {
@@ -65,7 +65,6 @@ public:
     }
 
 private:
-
     struct node_t {
         node_t(key_t key, data_t data) :
             key(key),
